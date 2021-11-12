@@ -25,7 +25,7 @@ async function run() {
       const user = database.collection("User");
       const discount = database.collection("discountUser");
      
-    
+    // home service start
      app.get(`/homeService`,async(req,res)=>{
         const cursor=homeService.find({})
         const result=await cursor.toArray()
@@ -53,20 +53,23 @@ async function run() {
       res.json(result)
     })
 
+    // home service end
 
-
+    // review start
     app.get(`/reviews`,async(req,res)=>{
       const cursor=Reviews.find({})
       const result=await cursor.toArray()
       res.json(result)
     })
 
-
    app.post(`/reviews`,async(req,res)=>{
     const newReview=req.body;
     const result=await Reviews.insertOne(newReview)
     res.json(result)
    })
+    // review end
+
+    //  user start
 
    app.post(`/user`,async(req,res)=>{
      const newuser=req.body;
@@ -99,8 +102,9 @@ async function run() {
 
    })
 
+    //  user end
 
-
+    //  orders start
    app.post(`/orders`,async(req,res)=>{
        const newOrder=req.body;
        const result=await Orders.insertOne(newOrder)
@@ -141,8 +145,9 @@ async function run() {
      const result=await Orders.updateOne(query,updateDoc,options)
      res.json(result)
     })
+    //  orders end
 
-    
+    //  discount start
     app.post(`/discount`,async(req,res)=>{
       const newemail=req.body;
       const result=await discount.insertOne(newemail)
