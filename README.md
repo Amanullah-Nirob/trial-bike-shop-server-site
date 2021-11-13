@@ -1,7 +1,7 @@
 # Trial Bike Shop
 
-Trial Bike Shop   [Live Site Link (demo website)](https://trial-bike-shop.web.app/).
-Trial Bike Shop  [client Site code Link (client site code link)](https://github.com/programming-hero-web-course-4/niche-website-client-side-nirub-khan).
+# Trial Bike Shop   [Live Site Link (demo website)](https://trial-bike-shop.web.app/).
+# Trial Bike Shop  [client Site code Link (client site code link)](https://github.com/programming-hero-web-course-4/niche-website-client-side-nirub-khan).
 
 
 ## Available information 2
